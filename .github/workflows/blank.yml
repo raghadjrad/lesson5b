@@ -33,4 +33,25 @@ jobs:
           echo "Hello , world 22222!" >> 1.txt
           echo "Hello , world 33333!" >> 1.txt
           cat 1.txt
+
+
+  check :  
+   
+     runs-on: ubuntu-latest
+
+     steps:
+     - name : List Directory
+       run: | 
+        pwd
+        ls -la
+       
+     - uses: actions/checkout@v4
+
+     - name : List AFTER
+       run:  ls -la
+        
+
+  
+          
+
           
